@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Weather from './components/Weather';
 
-function App() {
+const App = () => {
+  const headerStyles = {
+    textAlign: 'center',
+    backgroundColor: '#007bff', 
+    color: 'white', 
+    padding: '10px', 
+    margin: '0' 
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={headerStyles}>Fullstack COMP3123 Labtest 2</h1>
+      <h2 style={headerStyles}>Harlan Ferguson 101133838</h2>
+      <Weather />
     </div>
   );
-}
+};
 
 export default App;
